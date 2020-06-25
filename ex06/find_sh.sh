@@ -1,3 +1,3 @@
 #!/bin/sh
- find . -name \*.sh -print
 
+for f in *.sh; do printf '%s\n' "${f%*.sh}"; done
